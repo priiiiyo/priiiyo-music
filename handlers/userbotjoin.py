@@ -29,7 +29,6 @@ async def addchannel(client, message):
         await message.reply_text(
             "<b>helper already in your chat</b>",
         )
-        pass
     except Exception as e:
         print(e)
         await message.reply_text(
@@ -47,7 +46,7 @@ async def rem(USER, message):
         await USER.leave_chat(message.chat.id)
     except:  
         await message.reply_text(
-            f"<b>User couldn't leave your group! May be floodwaits."
-            "\n\nOr manually kick me from to your Group</b>",
+            "<b>User couldn't leave your group! May be floodwaits.\n\nOr manually kick me from to your Group</b>"
         )
+
         return
